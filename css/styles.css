@@ -79,25 +79,7 @@ img {
   letter-spacing: 0.03em;
 }
 /* ******************** header ********************** */
-.main-nav {
-  display: flex;
-  align-items: center;
-  /* padding-bottom: 25px;
-  padding-top: 24px; */
-}
-.header {
-  border-bottom: 1px solid #ececec;
-}
-.header-portfolio {
-  border-bottom: 1px solid #ececec;
-}
-.header-nav {
-  display: flex;
-  /* margin-left: 93px; */
-}
-.nav {
-  margin-left: 93px;
-}
+
 /**************************************** site nav *****************************/
 /* .site-nav-item {
   margin-right: 50px;
@@ -175,66 +157,6 @@ img {
 }
 
 /************************************* hero *************************************/
-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/header-img.jpg);
-  background-color: #c4c4c4;
-
-  max-width: 1600px;
-
-  margin-right: auto;
-  margin-left: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.hero-title {
-  display: flex;
-  margin: auto;
-  margin-bottom: 30px;
-  width: 696px;
-}
-/* button */
-.button {
-  display: inline-block;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.86;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin: 0 auto;
-  padding: 10px 32px 10px 32px;
-  border: hidden;
-
-  transition-property: background-color;
-  transition-duration: var(--general-duration);
-  transition-timing-function: var(--general-timing-function);
-}
-.button:hover {
-  background-color: #188ce8;
-}
 
 /*********************************** portfolio-button ************************************/
 .portfolio-button {
@@ -389,82 +311,6 @@ h1 {
 }
 
 /***************************** team ***********************/
-.bio-wrrap:not(:last-child) {
-  margin-right: 30px;
-}
-
-.section-team {
-  background-color: #f5f4fa;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-.bio-wrrap {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.bio .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--title-text-color);
-}
-.name {
-  margin-bottom: 10px;
-}
-
-.bio .profession {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--profession-color);
-}
-.wrrap-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.masters-social-list {
-  display: flex;
-  justify-content: center;
-}
-.profession {
-  margin-bottom: 16px;
-}
-.masters-social-link {
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: #afb1b8;
-
-  transition-property: background-color, color;
-  transition-duration: var(--general-duration);
-  transition-timing-function: var(--general-timing-function);
-}
-.masters-social-icon {
-  fill: currentColor;
-}
-
-.masters-social-link:focus,
-.masters-social-link:hover {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
-.masters-social-item + .masters-social-item {
-  margin-left: 10px;
-}
 
 /***************************** portfolio-project ********************************************/
 .portfolio-project h3 {
