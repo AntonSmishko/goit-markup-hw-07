@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
     <header class="header-portfolio"><div class="container main-nav">
@@ -223,9 +223,14 @@
             <!-- форма Подписаться -->
             <section class="sign-in">
                 <h4>Подпишитесь на рассылку</h4>
-                <form name="sign-in">
+                <form name="sign-in" class="sign-in-form">
                     <input type="email" name="user-email" class="sign-in-email" required placeholder="E-mail">
-                    <button type="submit" class="btn-sign-in">Подписаться</button>
+                    <div class="sign-in-wrap">
+                        <button type="submit" class="btn-sign-in">Подписаться<svg class="svg-sign-in" width="24" height="24">
+                                <use href="images/icons.svg#icon-send"></use>
+                            </svg></button>
+                    </div>
+            
                 </form>
             </section>
         
