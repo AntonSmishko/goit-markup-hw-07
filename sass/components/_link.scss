@@ -1,9 +1,9 @@
-.header-link {
+.header_list_link {
   display: flex;
 
   margin-left: auto;
 }
-.header-link > .link-item:not(:last-child) {
+.header_list_link > .header_list_link_item:not(:last-child) {
   margin-right: 30px;
 }
 

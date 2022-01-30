@@ -135,9 +135,18 @@
   transition-timing-function: var(--general-timing-function);
 }
 
-.btn-submit:focus,
-.btn-submit:hover {
-  background-color: #188ce8;
+// .btn-submit:focus,
+// .btn-submit:hover {
+//   background-color: #188ce8;
+// }
+
+.btn-submit {
+  &:focus {
+    background-color: #188ce8;
+  }
+  &:hover {
+    background-color: #188ce8;
+  }
 }
 
 .label-title {
@@ -153,9 +162,9 @@
   line-height: 0.857;
   letter-spacing: 0.01em;
 }
-.textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
+// .textarea::placeholder {
+//   color: rgba(117, 117, 117, 0.5);
+// }
 .textarea {
   outline: none;
   height: 120px;
@@ -165,8 +174,16 @@
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
 }
-.textarea:focus {
-  border-color: var(--accent-color);
+// .textarea:focus {
+//   border-color: var(--accent-color);
+// }
+.textarea {
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .check-text {
