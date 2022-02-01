@@ -150,20 +150,23 @@ img {
   color: #fff;
 }
 
-.work-wrrap,
-.bio {
+.work-list {
   display: flex;
 }
 
-.about-work:not(:last-child) {
+.work-list__item {
   margin-right: 30px;
 }
 
-.img-work-wrrap {
+.work-list__item--turn-left {
+  margin-right: -30px;
+}
+
+.work-list__img-wrapper {
   position: relative;
 }
 
-.about-work-text {
+.work-list__text {
   background: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
@@ -180,8 +183,16 @@ img {
   color: #ffffff;
 }
 
-.bio-wrrap:not(:last-child) {
+.masters-list__item {
   margin-right: 30px;
+}
+
+.masters-list__item--turn-left {
+  margin-right: -30px;
+}
+
+.masters-list {
+  display: flex;
 }
 
 .section-team {
@@ -190,13 +201,14 @@ img {
   padding-top: 94px;
 }
 
-.bio-wrrap {
+.masters-list__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.bio .name {
+.masters-list__name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -205,36 +217,29 @@ img {
   color: var(--title-text-color);
 }
 
-.name {
-  margin-bottom: 10px;
-}
-
-.bio .profession {
+.masters-list__profession {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--profession-color);
+  margin-bottom: 16px;
 }
 
-.wrrap-team {
+.masters-list__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.masters-social-list {
+.masters-list__social {
   display: flex;
   justify-content: center;
 }
 
-.profession {
-  margin-bottom: 16px;
-}
-
-.masters-social-link {
+.masters-list-social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -247,17 +252,16 @@ img {
   transition-timing-function: var(--general-timing-function);
 }
 
-.masters-social-icon {
-  fill: currentColor;
-}
-
-.masters-social-link:focus,
-.masters-social-link:hover {
+.masters-list-social__link:focus, .masters-list-social__link:hover {
   background-color: #2196f3;
   color: #ffffff;
 }
 
-.masters-social-item + .masters-social-item {
+.masters-list-social__icon {
+  fill: currentColor;
+}
+
+.masters-list-social__item + .masters-list-social__item {
   margin-left: 10px;
 }
 
@@ -266,11 +270,11 @@ img {
   padding-bottom: 94px;
 }
 
-.company-wrapper {
+.customers__list {
   display: flex;
 }
 
-.company-link {
+.customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,18 +289,17 @@ img {
   transition-timing-function: var(--general-timing-function);
 }
 
-.company-svg-icon {
+.customers__link:hover, .customers__link:focus {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+
+.customers__icon {
   fill: currentColor;
 }
 
-.company-box + .company-box {
+.customers__item + .customers__item {
   margin-left: 30px;
-}
-
-.company-link:hover,
-.company-link:focus {
-  border-color: #2196f3;
-  color: #2196f3;
 }
 
 .portfolio-project h3 {

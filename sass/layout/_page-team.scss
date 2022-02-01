@@ -1,5 +1,12 @@
-.bio-wrrap:not(:last-child) {
+.masters-list__item {
   margin-right: 30px;
+}
+.masters-list__item--turn-left {
+  margin-right: -30px;
+}
+
+.masters-list {
+  display: flex;
 }
 
 .section-team {
@@ -7,13 +14,15 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.bio-wrrap {
+.masters-list__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.bio .name {
+.masters-list__name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -21,33 +30,30 @@
   text-align: center;
   color: var(--title-text-color);
 }
-.name {
-  margin-bottom: 10px;
-}
 
-.bio .profession {
+.masters-list__profession {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--profession-color);
+  margin-bottom: 16px;
 }
-.wrrap-team {
+
+.masters-list__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.masters-social-list {
+.masters-list__social {
   display: flex;
   justify-content: center;
 }
-.profession {
-  margin-bottom: 16px;
-}
-.masters-social-link {
+
+.masters-list-social__link {
   width: 44px;
   height: 44px;
 
@@ -60,17 +66,18 @@
   transition-property: background-color, color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
+
+  &:focus,
+  &:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
 }
-.masters-social-icon {
+
+.masters-list-social__icon {
   fill: currentColor;
 }
 
-.masters-social-link:focus,
-.masters-social-link:hover {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
-.masters-social-item + .masters-social-item {
+.masters-list-social__item + .masters-list-social__item {
   margin-left: 10px;
 }

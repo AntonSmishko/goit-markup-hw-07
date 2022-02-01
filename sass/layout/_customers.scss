@@ -2,10 +2,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.company-wrapper {
+.customers__list {
   display: flex;
 }
-.company-link {
+.customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,16 +19,17 @@
   transition-property: color, border-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    color: #2196f3;
+  }
 }
-.company-svg-icon {
+.customers__icon {
   fill: currentColor;
 }
 
-.company-box + .company-box {
+.customers__item + .customers__item {
   margin-left: 30px;
-}
-.company-link:hover,
-.company-link:focus {
-  border-color: #2196f3;
-  color: #2196f3;
 }
