@@ -19,7 +19,8 @@
   transition-property: background-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
-}
-.button:hover {
-  background-color: #188ce8;
+
+  &:hover {
+    background-color: #188ce8;
+  }
 }
