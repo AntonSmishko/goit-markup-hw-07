@@ -29,7 +29,7 @@
   transition: transform 1000ms;
 }
 
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -42,15 +42,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover > .modal__close-svg,
+  &:focus > .modal__close-svg {
+    fill: #188ce8;
+  }
 }
 
-.svg-modal-close {
+.modal__close-svg {
   transition-property: fill;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
-}
-.svg-modal-close:hover {
-  fill: #188ce8;
 }
 
 .is-hidden {
@@ -58,7 +60,7 @@
   pointer-events: none;
   visibility: hidden;
 }
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
@@ -73,15 +75,15 @@
   margin-top: 10px;
 }
 
-.form-input:focus {
+.form-field__input:focus {
   border-color: var(--accent-color);
 }
 
-.form-input:focus + .modal-icon {
+.form-field__input:focus + .form-field__icon {
   fill: var(--accent-color);
 }
 
-.form-input {
+.form-field__input {
   height: 40px;
   padding: 11px 12px;
   padding-left: 42px;
@@ -93,15 +95,15 @@
 }
 
 .textarea,
-.form-input {
+.form-field__input {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.input-wrap {
+.form-field__input-wrap {
   position: relative;
 }
-.modal-icon {
+.form-field__icon {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
@@ -149,19 +151,28 @@
   }
 }
 
-.label-title {
+.form-field__title {
   color: var(--features-info-color);
   display: block;
   margin-bottom: 4px;
 }
 
-.label-title,
-.textarea::placeholder {
+.form-field__title {
   font-weight: normal;
   font-size: 12px;
-  line-height: 0.857;
+  line-height: 1.166;
   letter-spacing: 0.01em;
 }
+
+.textarea::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
 // .textarea::placeholder {
 //   color: rgba(117, 117, 117, 0.5);
 // }
@@ -186,7 +197,7 @@
   }
 }
 
-.check-text {
+.form-field-checkbox__title {
   display: flex;
   align-items: center;
   font-weight: normal;
@@ -199,7 +210,7 @@
 }
 
 /* Кастомный чекбокс через before */
-/* .check-text::before {
+/* .form-field-checkbox__title::before {
   margin-right: 8px;
   content: "";
   width: 16px;
@@ -207,7 +218,7 @@
   border: 2px solid #212121;
   border-radius: 2px;
 }
-.policy-check:checked + .check-text::before {
+.form-field-checkbox__policy-check:checked + .form-field-checkbox__title::before {
   background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,7 +232,7 @@
   margin-bottom: 30px;
 }
 /* Кастомный чекбокс через svg-sprite */
-.check-text span {
+.form-field-checkbox__title span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,17 +242,19 @@
   border: 2px solid #212121;
   border-radius: 2px;
 }
-.checkbox-icon {
+.form-field-checkbox__icon {
   fill: transparent;
 }
-.policy-check:checked + .check-text span {
+.form-field-checkbox__policy-check:checked + .form-field-checkbox__title span {
   background-color: var(--accent-color);
   border: none;
 }
-.policy-check:checked + .check-text .checkbox-icon {
+.form-field-checkbox__policy-check:checked
+  + .form-field-checkbox__title
+  .form-field-checkbox__icon {
   fill: #ffffff;
 }
-.check-link {
+.form-field-checkbox__link {
   margin-left: 7px;
   text-decoration: underline;
   color: var(--accent-color);
