@@ -643,7 +643,7 @@ img {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 0.87;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -651,14 +651,6 @@ img {
 
 .form-field + .form-field {
   margin-top: 10px;
-}
-
-.form-field__input:focus {
-  border-color: var(--accent-color);
-}
-
-.form-field__input:focus + .form-field__icon {
-  fill: var(--accent-color);
 }
 
 .form-field__input {
@@ -669,6 +661,14 @@ img {
   transition-property: border-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
+}
+
+.form-field__input:focus + .form-field__icon {
+  fill: var(--accent-color);
+}
+
+.form-field__input:focus {
+  border-color: var(--accent-color);
 }
 
 .textarea,
@@ -735,14 +735,6 @@ img {
   letter-spacing: 0.01em;
 }
 
-.textarea::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .textarea {
   outline: none;
   height: 120px;
@@ -751,6 +743,14 @@ img {
   transition-property: border-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
+}
+
+.textarea::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .textarea:focus {
@@ -788,6 +788,7 @@ img {
   border: none;
 } */
 .form-field-checkbox {
+  align-items: center;
   display: flex;
   justify-content: center;
   margin-top: 20px;

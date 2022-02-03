@@ -64,7 +64,7 @@
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 0.87;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -75,13 +75,13 @@
   margin-top: 10px;
 }
 
-.form-field__input:focus {
-  border-color: var(--accent-color);
-}
+// .form-field__input:focus {
+//   border-color: var(--accent-color);
+// }
 
-.form-field__input:focus + .form-field__icon {
-  fill: var(--accent-color);
-}
+// .form-field__input:focus + .form-field__icon {
+//   fill: var(--accent-color);
+// }
 
 .form-field__input {
   height: 40px;
@@ -92,6 +92,14 @@
   transition-property: border-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
+
+  &:focus + .form-field__icon {
+    fill: var(--accent-color);
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .textarea,
@@ -135,14 +143,7 @@
   transition-property: background-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
-}
 
-// .btn-submit:focus,
-// .btn-submit:hover {
-//   background-color: #188ce8;
-// }
-
-.btn-submit {
   &:focus {
     background-color: #188ce8;
   }
@@ -150,6 +151,15 @@
     background-color: #188ce8;
   }
 }
+
+// .btn-submit {
+//   &:focus {
+//     background-color: #188ce8;
+//   }
+//   &:hover {
+//     background-color: #188ce8;
+//   }
+// }
 
 .form-field__title {
   color: var(--features-info-color);
@@ -164,18 +174,6 @@
   letter-spacing: 0.01em;
 }
 
-.textarea::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
-
-// .textarea::placeholder {
-//   color: rgba(117, 117, 117, 0.5);
-// }
 .textarea {
   outline: none;
   height: 120px;
@@ -184,6 +182,15 @@
   transition-property: border-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timing-function);
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 // .textarea:focus {
 //   border-color: var(--accent-color);
@@ -226,6 +233,7 @@
   border: none;
 } */
 .form-field-checkbox {
+  align-items: center;
   display: flex;
   justify-content: center;
   margin-top: 20px;
