@@ -18,15 +18,15 @@
     <header class="header"><div class="container main-nav">
         <a class="logo" href="index.html"> <span class="element-logo">Web</span><span class="second-element-logo">Studio</span></a>
         <nav class="header-nav">
-            <ul class="header-nav_list">
-                <li class="header-nav-list_item"> <a class="header-nav-list_link header-nav-list_link--current" href="/">Студия</a></li>
-                <li class="header-nav-list_item"> <a class="header-nav-list_link" href="portfolio.html">Портфолио</a></li>
-                <li class="header-nav-list_item"> <a class="header-nav-list_link" href="">Контакты</a></li>
+            <ul class="header-nav__list">
+                <li class="header-nav-list__item"> <a class="header-nav-list__link header-nav-list__link--current" href="/">Студия</a></li>
+                <li class="header-nav-list__item"> <a class="header-nav-list__link" href="portfolio.html">Портфолио</a></li>
+                <li class="header-nav-list__item"> <a class="header-nav-list__link" href="">Контакты</a></li>
             </ul>
         </nav>
         <ul class="header-list">
-            <li class="header-list_item"><a class="header-list_link" href="mailto:info@devstudio.com"><svg class="header-list_icon" width="16" height="12"><use href="images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
-            <li class="header-list_item"><a class="header-list_link" href="tel:+380961111111"><svg class="header-list_icon" width="16" height="12">
+            <li class="header-list__item"><a class="header-list__link" href="mailto:info@devstudio.com"><svg class="header-list__icon" width="16" height="12"><use href="images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+            <li class="header-list__item"><a class="header-list__link" href="tel:+380961111111"><svg class="header-list__icon" width="16" height="12">
                 <use href="images/icons.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
         </ul></div>
@@ -34,7 +34,7 @@
     <main> 
         <!-- ГЕРОЙ -->
     <section class="hero"><div class="container">
-        <h1 class="hero_title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button" data-modal-open>Заказать услугу</button></div>
     </section>
     <!-- НАШИ ПРЕИМУЩЕСТВА -->
@@ -231,11 +231,11 @@
             </div>
 <!-- форма Подписаться -->
             <div class="sign-in">
-                <h4>Подпишитесь на рассылку</h4>
-                <form name="sign-in" class="sign-in-form">
-                    <input type="email" name="user-email" class="sign-in-email" required placeholder="E-mail">
-                    <div class="sign-in-wrap">
-                    <button type="submit" class="btn-sign-in">Подписаться<svg class="svg-sign-in" width="24" height="24">
+                <h4 class="sign-in__title">Подпишитесь на рассылку</h4>
+                <form name="sign-in" class="sign-in__form">
+                    <input type="email" name="user-email" class="sign-in__email" required placeholder="E-mail">
+                    <div>
+                    <button type="submit" class="sign-in__btn">Подписаться<svg class="sign-in__svg" width="24" height="24">
                         <use href="images/icons.svg#icon-send"></use>
                     </svg></button>
                     </div>

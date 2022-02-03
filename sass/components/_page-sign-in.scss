@@ -2,7 +2,7 @@
   margin-left: 93px;
 }
 
-.sign-in > h4 {
+.sign-in__title {
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -12,7 +12,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.sign-in-email {
+.sign-in__email {
   outline: none;
   padding: 15px 16px;
 
@@ -24,25 +24,25 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.sign-in-email::placeholder {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-
+.sign-in__form {
   display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
 }
 
-.sign-in-form {
-  display: flex;
-}
-
-.btn-sign-in {
+.sign-in__btn {
   display: flex;
   align-items: center;
   padding-left: 29px;
@@ -65,7 +65,7 @@
   position: relative;
 }
 
-.svg-sign-in {
+.sign-in__svg {
   position: absolute;
   right: 28px;
   top: 13px;
